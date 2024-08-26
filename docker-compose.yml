@@ -1,0 +1,26 @@
+
+version: '3'
+
+services:
+  web:
+    build: .
+    command: gunicorn --workers 3 --bind 0.0.0.0:8000 saleor.wsgi:application
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+
+  db:
+    image: postgres
+    environment:
+      POSTGRES_DB: saleor
+      POSTGRES_USER: saleor
+      POSTGRES_PASSWORD: password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+
+volumes:
+  postgres_data:
+    

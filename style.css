@@ -1,0 +1,420 @@
+/* =========================
+   FONT + BASE RESET
+========================= */
+
+@import url('https://fonts.bunny.net/css?family=akronim:400');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Inter',sans-serif;
+  background:#f4fbfa;
+  color:#16322f;
+  overflow-x:hidden;
+}
+
+/* =========================
+   BACKGROUND GLOW SYSTEM
+========================= */
+
+.bg-gradient{
+  position:fixed;
+  inset:0;
+  background:linear-gradient(
+    135deg,
+    #e9f8f6,
+    #ffffff,
+    #eef9ff
+  );
+  z-index:-2;
+}
+
+.bg-gradient::before{
+  content:"";
+  position:absolute;
+  width:500px;
+  height:500px;
+  background:#bff5e8;
+  filter:blur(140px);
+  top:-200px;
+  right:-150px;
+  opacity:0.6;
+}
+
+.bg-gradient::after{
+  content:"";
+  position:absolute;
+  width:400px;
+  height:400px;
+  background:#cfe8ff;
+  filter:blur(140px);
+  bottom:-200px;
+  left:-150px;
+  opacity:0.5;
+}
+
+/* =========================
+   APP WRAPPER
+========================= */
+
+.app{
+  width:100%;
+  max-width:1200px;
+  margin:auto;
+  padding:30px 20px 100px;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero{
+  position:relative;
+  padding:50px 25px;
+  border-radius:40px;
+  background:rgba(255,255,255,0.65);
+  backdrop-filter:blur(20px);
+  margin-bottom:60px;
+  overflow:hidden;
+  box-shadow:0 20px 60px rgba(0,0,0,0.05);
+}
+
+.hero-glow{
+  position:absolute;
+  width:450px;
+  height:450px;
+  background:#bff5e8;
+  filter:blur(120px);
+  top:-200px;
+  right:-150px;
+  opacity:0.5;
+}
+
+.hero-top{
+  display:flex;
+  align-items:center;
+  gap:30px;
+  flex-wrap:wrap;
+}
+
+.profile-ring{
+  padding:6px;
+  border-radius:50%;
+  background:linear-gradient(135deg,#7fe0cc,#d6fff5);
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.profile-ring img{
+  width:140px;
+  height:140px;
+  border-radius:50%;
+  object-fit:cover;
+  border:4px solid white;
+}
+
+.hero-text{
+  flex:1;
+  min-width:250px;
+}
+
+/* =========================
+   BRAND TITLE (AKRONIM)
+========================= */
+
+.brand-title{
+  font-family:'Akronim',display;
+  font-size:4rem;
+  color:#2b7469;
+  line-height:1;
+}
+
+/* =========================
+   SUBTITLE + DESCRIPTION
+========================= */
+
+.subtitle{
+  margin-top:10px;
+  font-size:1rem;
+  color:#4f7c75;
+  font-weight:500;
+}
+
+.hero-description{
+  margin-top:15px;
+  max-width:600px;
+  line-height:1.7;
+  color:#5e7f7a;
+}
+
+/* =========================
+   SOCIAL BUTTONS
+========================= */
+
+.social-buttons{
+  display:flex;
+  gap:15px;
+  flex-wrap:wrap;
+  margin-top:35px;
+}
+
+.social-btn{
+  padding:14px 22px;
+  border-radius:40px;
+  background:rgba(255,255,255,0.8);
+  backdrop-filter:blur(10px);
+  text-decoration:none;
+  color:#16322f;
+  font-weight:600;
+  box-shadow:0 8px 25px rgba(0,0,0,0.06);
+  transition:0.3s ease;
+}
+
+.social-btn:hover{
+  transform:translateY(-4px);
+  background:white;
+}
+
+/* =========================
+   COVERFLOW SECTION
+========================= */
+
+.coverflow-section{
+  margin-bottom:70px;
+}
+
+.section-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:20px;
+}
+
+.section-header h2{
+  font-size:1.4rem;
+}
+
+.section-header span{
+  color:#6e8d88;
+}
+
+/* =========================
+   3D COVERFLOW
+========================= */
+
+.coverflow{
+  display:flex;
+  gap:30px;
+  overflow-x:auto;
+  padding:40px 20px;
+  scroll-snap-type:x mandatory;
+  perspective:1500px;
+  scroll-behavior:smooth;
+}
+
+.coverflow::-webkit-scrollbar{
+  display:none;
+}
+
+.card{
+  min-width:320px;
+  height:430px;
+  border-radius:35px;
+  overflow:hidden;
+  background:white;
+  scroll-snap-align:center;
+  transition:0.6s ease;
+  transform-style:preserve-3d;
+  box-shadow:0 25px 60px rgba(0,0,0,0.10);
+  position:relative;
+}
+
+/* LEFT DEPTH */
+.card:nth-child(1),
+.card:nth-child(2){
+  transform:rotateY(22deg) scale(0.92);
+  opacity:0.85;
+}
+
+/* RIGHT DEPTH */
+.card:nth-child(3),
+.card:nth-child(4){
+  transform:rotateY(-22deg) scale(0.92);
+  opacity:0.85;
+}
+
+/* CENTER HOVER FOCUS */
+.card:hover{
+  transform:rotateY(0deg) scale(1.05);
+  z-index:10;
+}
+
+/* IMAGE */
+.card img{
+  width:100%;
+  height:230px;
+  object-fit:cover;
+}
+
+/* CONTENT */
+.card-content{
+  padding:22px;
+}
+
+.card-content h3{
+  font-size:1.2rem;
+  margin-bottom:10px;
+}
+
+.card-content p{
+  font-size:0.95rem;
+  color:#5f7f7a;
+  line-height:1.5;
+}
+
+/* CTA */
+.explore{
+  margin-top:15px;
+  font-weight:700;
+  color:#1d7f73;
+}
+
+/* =========================
+   DASHBOARD SYSTEM
+========================= */
+
+.dashboard{
+  display:grid;
+  gap:25px;
+}
+
+.dashboard-card{
+  background:rgba(255,255,255,0.85);
+  backdrop-filter:blur(10px);
+  border-radius:25px;
+  padding:25px;
+  box-shadow:0 15px 40px rgba(0,0,0,0.05);
+}
+
+.dashboard-card h3{
+  margin-bottom:18px;
+}
+
+/* PROGRESS */
+.progress-row{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:10px;
+}
+
+.progress-bar{
+  width:100%;
+  height:12px;
+  background:#e6f3f1;
+  border-radius:20px;
+  overflow:hidden;
+}
+
+.progress-fill{
+  width:80%;
+  height:100%;
+  background:#4bb8a7;
+  border-radius:20px;
+}
+
+.progress-meta{
+  margin-top:10px;
+  color:#6a8a85;
+}
+
+/* RESOURCE GRID */
+.resource-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+  gap:15px;
+}
+
+.resource-card{
+  padding:18px;
+  background:#f1fbf9;
+  border-radius:18px;
+  text-align:center;
+  font-weight:500;
+  transition:0.3s;
+}
+
+.resource-card:hover{
+  transform:translateY(-3px);
+  background:#e6f7f4;
+}
+
+/* TOPICS */
+.topics{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.topics span{
+  padding:10px 16px;
+  border-radius:30px;
+  background:#eef8f6;
+  font-size:0.9rem;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+  text-align:center;
+  margin-top:70px;
+  color:#6a8a85;
+  font-style:italic;
+}
+
+/* =========================
+   MODAL SYSTEM (OPTION B)
+========================= */
+
+.modal{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.6);
+  backdrop-filter:blur(10px);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:999;
+}
+
+.modal-box{
+  width:90%;
+  max-width:500px;
+  background:white;
+  border-radius:25px;
+  padding:20px;
+  text-align:center;
+  box-shadow:0 30px 80px rgba(0,0,0,0.2);
+}
+
+.modal-box img{
+  width:100%;
+  border-radius:20px;
+  margin-bottom:15px;
+}
+
+.modal-box button{
+  margin-top:15px;
+  padding:12px 18px;
+  border:none;
+  border-radius:30px;
+  background:#4bb8a7;
+  color:white;
+  font-weight:600;
+  cursor:pointer;
+}

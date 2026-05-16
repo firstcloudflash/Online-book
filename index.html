@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CHEW In Training | Healthcare Journey</title>
+
+  <!-- PWA SUPPORT -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#4bb8a7">
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.bunny.net">
+  <link href="https://fonts.bunny.net/css?family=akronim:400" rel="stylesheet"/>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+  <!-- BACKGROUND -->
+  <div class="bg-gradient"></div>
+
+  <!-- APP WRAPPER -->
+  <main class="app">
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero">
+
+      <div class="hero-glow"></div>
+
+      <div class="hero-top">
+
+        <div class="profile-ring">
+          <img src="https://i.postimg.cc/YqtNfwrQ/IMG-0712.jpg" alt="CHEW Profile"/>
+        </div>
+
+        <div class="hero-text">
+
+          <h1 class="brand-title">CHEW In Training</h1>
+
+          <p class="subtitle">Learning. Healing. Growing.</p>
+
+          <p class="hero-description">
+            Documenting the journey into community healthcare through structured learning,
+            clinical experience, and public health awareness — building the future of care
+            with discipline and purpose.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- SOCIAL ACTION BUTTONS -->
+      <div class="social-buttons">
+
+        <a href="https://wa.me/" class="social-btn">🟢 WhatsApp</a>
+
+        <a href="#" class="social-btn">🎵 TikTok</a>
+
+        <a href="#" class="social-btn">🔵 Facebook</a>
+
+      </div>
+
+    </section>
+
+    <!-- ================= 3D COVERFLOW ================= -->
+    <section class="coverflow-section">
+
+      <div class="section-header">
+        <h2>Journey Highlights</h2>
+        <span>← Swipe →</span>
+      </div>
+
+      <div class="coverflow" id="coverflow"></div>
+
+    </section>
+
+    <!-- ================= INDUSTRY DASHBOARD ================= -->
+    <section class="dashboard">
+
+      <!-- PROGRESS TRACKER -->
+      <div class="dashboard-card">
+
+        <h3>Progress Tracker</h3>
+
+        <div class="progress-row">
+          <span>Clinical Postings</span>
+          <span>80%</span>
+        </div>
+
+        <div class="progress-bar">
+          <div class="progress-fill"></div>
+        </div>
+
+        <div class="progress-meta">
+          <small>Current Stage: Community Health Practice Training</small>
+        </div>
+
+      </div>
+
+      <!-- RESOURCE LIBRARY -->
+      <div class="dashboard-card">
+
+        <h3>Resource Library</h3>
+
+        <div class="resource-grid">
+
+          <div class="resource-card">Anatomy</div>
+          <div class="resource-card">Pharmacology</div>
+          <div class="resource-card">Nutrition</div>
+          <div class="resource-card">Public Health</div>
+          <div class="resource-card">Epidemiology</div>
+          <div class="resource-card">Maternal Care</div>
+
+        </div>
+
+      </div>
+
+      <!-- HEALTH TOPICS -->
+      <div class="dashboard-card">
+
+        <h3>Health Topics</h3>
+
+        <div class="topics">
+
+          <span>Maternal Care</span>
+          <span>Child Health</span>
+          <span>Hygiene</span>
+          <span>Disease Prevention</span>
+          <span>Vaccination</span>
+          <span>Community Outreach</span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ================= FOOTER IDENTITY ================= -->
+    <section class="footer">
+
+      <p>
+        “Building a future in community healthcare through knowledge, discipline, and service to humanity.”
+      </p>
+
+    </section>
+
+  </main>
+
+  <!-- ================= SCRIPTS ================= -->
+  <script src="script.js"></script>
+
+  <!-- PWA SERVICE WORKER -->
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("service-worker.js");
+    }
+  </script>
+
+</body>
+</html>

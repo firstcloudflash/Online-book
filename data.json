@@ -2,7 +2,7 @@
   "brand": {
     "name": "CHEW In Training",
     "tagline": "Learning. Healing. Growing.",
-    "description": "A structured journey into community healthcare education, clinical experience, and public health awareness.",
+    "description": "A structured digital journey into community healthcare education, clinical experience, and public health development.",
     "theme": "educational-lifestyle-healthcare"
   },
 
@@ -11,72 +11,72 @@
       "id": "study-journey",
       "title": "Study Journey",
       "image": "https://i.postimg.cc/fbkJqzWy/IMG-1011.png",
-      "context": "Learning healthcare one module at a time through structured study and discipline.",
+      "context": "Structured learning, discipline, and academic growth in community health training.",
       "cta": "Explore",
-      "details": "This section represents the academic foundation of a CHEW student. It includes study routines, revision methods, notes organization systems, and learning strategies used in community health training."
+      "details": "This section represents the academic backbone of a CHEW student. It includes structured revision routines, note organization systems, learning strategies, and disciplined study habits that shape professional competence in community health practice."
     },
 
     {
       "id": "clinical-experience",
       "title": "Clinical Experience",
       "image": "https://i.postimg.cc/zfvW4GJx/IMG-0912.jpg",
-      "context": "Documenting real-life clinical training experiences in healthcare environments.",
+      "context": "Real-world exposure to healthcare environments and patient care practice.",
       "cta": "Watch Journey",
-      "details": "This module reflects hands-on clinical exposure in hospitals, health centers, and community outreach programs. It includes patient interaction, supervision learning, and field practice experiences."
+      "details": "Hands-on clinical training in hospitals, primary health centers, and outreach programs. Includes supervised patient interaction, field practice, and real-time decision learning in healthcare environments."
     },
 
     {
       "id": "health-awareness",
       "title": "Health Awareness",
       "image": "https://i.postimg.cc/MZVBC4SG/IMG-0915.jpg",
-      "context": "Making health knowledge simple, accessible, and practical for everyday life.",
+      "context": "Simplifying health knowledge for everyday life and community wellbeing.",
       "cta": "Learn More",
-      "details": "Focuses on public health education including hygiene, disease prevention, nutrition, maternal care, child health, and community wellness education strategies."
+      "details": "Focuses on public health education including hygiene, disease prevention, nutrition, maternal and child health, and practical community wellness education strategies."
     },
 
     {
       "id": "community-care",
       "title": "Community Care",
       "image": "https://i.postimg.cc/Gmhssmsp/IMG-0911.jpg",
-      "context": "Promoting healthier communities through awareness and outreach programs.",
+      "context": "Outreach programs that strengthen health in local communities.",
       "cta": "Discover",
-      "details": "Highlights community outreach work including vaccination campaigns, maternal health education, hygiene awareness, and rural health support initiatives."
+      "details": "Covers vaccination drives, rural health outreach, maternal support programs, hygiene awareness campaigns, and community-based healthcare interventions."
     },
 
     {
       "id": "maternal-health",
       "title": "Maternal Care Focus",
       "image": "https://i.postimg.cc/zfvW4GJx/IMG-0912.jpg",
-      "context": "Understanding pregnancy care, maternal safety, and child health fundamentals.",
+      "context": "Understanding safe motherhood and child health fundamentals.",
       "cta": "Explore",
-      "details": "Covers antenatal care, safe delivery practices, postnatal care, and maternal health education used in community health practice."
+      "details": "Includes antenatal care, safe delivery practices, postnatal care, infant health monitoring, and maternal education in community healthcare settings."
     },
 
     {
       "id": "public-health-core",
       "title": "Public Health Core",
       "image": "https://i.postimg.cc/4NwYZR22/IMG-0921.jpg",
-      "context": "The foundation of population health, prevention, and community wellness systems.",
+      "context": "Foundational systems that support population health and disease prevention.",
       "cta": "View",
-      "details": "Explains epidemiology basics, disease prevention systems, sanitation practices, and public health strategy implementation."
+      "details": "Explores epidemiology basics, sanitation systems, disease prevention strategies, health policy structure, and public health implementation frameworks."
     },
 
     {
       "id": "student-lifestyle",
       "title": "Student Lifestyle",
       "image": "https://i.postimg.cc/4NwYZR22/IMG-0921.jpg",
-      "context": "Balancing academic pressure, discipline, and healthcare training life.",
+      "context": "Balancing education, discipline, and personal growth in training life.",
       "cta": "See Life",
-      "details": "Shows daily routines of a CHEW student including study schedules, fieldwork balance, rest cycles, and personal discipline habits."
+      "details": "Daily routines of a CHEW student including study schedules, clinical rotations, rest cycles, stress management, and personal discipline systems."
     },
 
     {
       "id": "future-health-worker",
       "title": "Future Health Professional",
       "image": "https://i.postimg.cc/rFypfYyP/IMG-0926.png",
-      "context": "Building the mindset, skills, and discipline of a future healthcare worker.",
+      "context": "Developing the mindset and skills of a future healthcare professional.",
       "cta": "Vision",
-      "details": "Represents long-term growth into a certified community health extension worker with focus on service, care, and public health impact."
+      "details": "Represents long-term transformation into a certified community health extension worker focused on service delivery, public health impact, and community wellbeing leadership."
     }
   ]
 }
